@@ -1,0 +1,739 @@
+const SvgIdentityOrchestration = (props) => (
+  <svg
+    className="identity-orchestration_svg__pointer-events-none identity-orchestration_svg__h-full identity-orchestration_svg__w-full"
+    viewBox="0 0 640 640"
+    {...props}
+  >
+    <defs>
+      <linearGradient
+        id="identity-orchestration_svg__d"
+        x1={0}
+        x2={1}
+        y1={0}
+        y2={1}
+      >
+        <stop offset="0%" stopColor="#12224A" />
+        <stop offset="100%" stopColor="#050B1D" />
+      </linearGradient>
+      <linearGradient
+        id="identity-orchestration_svg__b"
+        x1={0}
+        x2={1}
+        y1={0}
+        y2={1}
+      >
+        <stop offset="0%" stopColor="#FFB75E" />
+        <stop offset="100%" stopColor="#FF9F2F" />
+      </linearGradient>
+      <filter
+        id="identity-orchestration_svg__e"
+        width="180%"
+        height="180%"
+        x="-40%"
+        y="-40%"
+      >
+        <feDropShadow
+          dx={0}
+          dy={4}
+          floodColor="#050B1D"
+          floodOpacity={0.14}
+          stdDeviation={7}
+        />
+      </filter>
+      <filter
+        id="identity-orchestration_svg__c"
+        width="260%"
+        height="260%"
+        x="-80%"
+        y="-80%"
+      >
+        <feGaussianBlur result="b" stdDeviation={7} />
+        <feMerge>
+          <feMergeNode in="b" />
+          <feMergeNode in="SourceGraphic" />
+        </feMerge>
+      </filter>
+      <radialGradient
+        id="identity-orchestration_svg__a"
+        cx="50%"
+        cy="50%"
+        r="50%"
+      >
+        <stop offset="0%" stopColor="#FF9F2F" stopOpacity={0.18} />
+        <stop offset="100%" stopColor="#FF9F2F" stopOpacity={0} />
+      </radialGradient>
+    </defs>
+    <circle
+      cx={320}
+      cy={320}
+      r={266}
+      fill="url(#identity-orchestration_svg__a)"
+    />
+    <g fill="none">
+      <circle
+        cx={320}
+        cy={320}
+        r={196}
+        stroke="#56616C"
+        strokeOpacity={0.2}
+        strokeWidth={18}
+      />
+      <circle cx={320} cy={320} r={196} stroke="#FFF" strokeWidth={10} />
+      <circle
+        cx={320}
+        cy={320}
+        r={196}
+        stroke="#050B1D"
+        strokeDasharray={1231.504}
+        strokeDashoffset={1231.504}
+        strokeLinecap="round"
+        strokeOpacity={0.55}
+        strokeWidth={2}
+        className="identity-orchestration_svg__nsec-draw"
+        transform="rotate(-90 320 320)"
+      />
+      <circle
+        cx={320}
+        cy={320}
+        r={196}
+        stroke="url(#identity-orchestration_svg__b)"
+        strokeDasharray="120 1111.5043202071988"
+        strokeLinecap="round"
+        strokeWidth={6}
+        className="identity-orchestration_svg__nsec-flow"
+        filter="url(#identity-orchestration_svg__c)"
+        transform="rotate(-90 320 320)"
+      />
+      <circle
+        cx={320}
+        cy={320}
+        r={162}
+        stroke="#56616C"
+        strokeDasharray="2 10"
+        strokeLinecap="round"
+        strokeOpacity={0.22}
+        strokeWidth={1.5}
+      />
+    </g>
+    <g className="identity-orchestration_svg__nsec-breathe">
+      <path
+        fill="none"
+        stroke="#12224A"
+        strokeLinecap="round"
+        strokeOpacity={0.85}
+        strokeWidth={12}
+        d="M290 282v-22a30 30 0 0 1 60 0v22"
+      />
+      <rect
+        width={136}
+        height={96}
+        x={252}
+        y={280}
+        fill="url(#identity-orchestration_svg__d)"
+        filter="url(#identity-orchestration_svg__e)"
+        rx={20}
+      />
+      <g fill="none" stroke="#FF9F2F" strokeLinecap="round" strokeWidth={2.8}>
+        <path d="M300 310a20 20 0 0 1 40 0" />
+        <path
+          stroke="#FFB75E"
+          d="M307 312a13 13 0 0 1 26 0v6a30 30 0 0 1-3 13"
+        />
+        <path d="M314 313a6 6 0 0 1 12 0v9a34 34 0 0 1-3 14" />
+        <path stroke="#FFB75E" d="M307 322a34 34 0 0 1-4 14" />
+        <path d="M299 315v5a30 30 0 0 1-3 12" />
+        <path stroke="#FFB75E" d="M340 316a34 34 0 0 1-3 15" />
+      </g>
+      <text
+        x={320}
+        y={362}
+        fill="#FFF"
+        fontSize={13}
+        fontWeight={700}
+        letterSpacing={2.2}
+        textAnchor="middle"
+      >
+        {"NICOLASEC"}
+      </text>
+    </g>
+    <text
+      x={320}
+      y={392}
+      fill="#56616C"
+      fontSize={11.5}
+      fontWeight={600}
+      letterSpacing={1.6}
+      textAnchor="middle"
+    >
+      {"IDENTITY ORCHESTRATION"}
+    </text>
+    <g
+      className="identity-orchestration_svg__nsec-pop"
+      style={{
+        "--d": "0.5s",
+      }}
+    >
+      <g
+        className="identity-orchestration_svg__nsec-float-b"
+        transform="translate(320 124)"
+      >
+        <rect
+          width={54}
+          height={54}
+          x={-27}
+          y={-27}
+          fill="#FFF"
+          stroke="#56616C"
+          strokeOpacity={0.32}
+          strokeWidth={2}
+          filter="url(#identity-orchestration_svg__e)"
+          rx={18}
+        />
+        <path
+          fill="none"
+          stroke="#050B1D"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={1.8}
+          d="M0 0a4.2 4.2 0 1 0 0-8.4A4.2 4.2 0 0 0 0 0m-8 9A8 8 0 0 1 8 9"
+        />
+        <circle cx={19} cy={-19} r={8.5} fill="#050B1D" />
+        <text
+          x={19}
+          y={-15.8}
+          fill="#FFF"
+          fontSize={9}
+          fontWeight={700}
+          textAnchor="middle"
+        >
+          {"1"}
+        </text>
+      </g>
+    </g>
+    <text
+      y={-48}
+      fill="#56616C"
+      className="identity-orchestration_svg__nsec-pop"
+      fontSize={12.5}
+      fontWeight={600}
+      style={{
+        "--d": "0.7s",
+      }}
+      textAnchor="middle"
+      transform="translate(320 124)"
+    >
+      {"Entrada"}
+    </text>
+    <g
+      className="identity-orchestration_svg__nsec-pop"
+      style={{
+        "--d": "0.6799999999999999s",
+      }}
+    >
+      <g
+        className="identity-orchestration_svg__nsec-float-a"
+        transform="translate(458.593 181.407)"
+      >
+        <rect
+          width={54}
+          height={54}
+          x={-27}
+          y={-27}
+          fill="#FFF"
+          stroke="#56616C"
+          strokeOpacity={0.32}
+          strokeWidth={2}
+          filter="url(#identity-orchestration_svg__e)"
+          rx={18}
+        />
+        <path
+          fill="none"
+          stroke="#050B1D"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={1.8}
+          d="M-8-6.5H8v13H-8zM0 0a2.3 2.3 0 1 0 0-4.6A2.3 2.3 0 0 0 0 0m-3.6 4.4c.9-2.2 6.3-2.2 7.2 0"
+        />
+        <circle cx={19} cy={-19} r={8.5} fill="#050B1D" />
+        <text
+          x={19}
+          y={-15.8}
+          fill="#FFF"
+          fontSize={9}
+          fontWeight={700}
+          textAnchor="middle"
+        >
+          {"2"}
+        </text>
+      </g>
+    </g>
+    <text
+      x={36.77}
+      y={-32.77}
+      fill="#56616C"
+      className="identity-orchestration_svg__nsec-pop"
+      fontSize={12.5}
+      fontWeight={600}
+      style={{
+        "--d": "0.8799999999999999s",
+      }}
+      transform="translate(458.593 181.407)"
+    >
+      {"Identidade"}
+    </text>
+    <g
+      className="identity-orchestration_svg__nsec-pop"
+      style={{
+        "--d": "0.86s",
+      }}
+    >
+      <g
+        className="identity-orchestration_svg__nsec-float-b"
+        transform="translate(516 320)"
+      >
+        <rect
+          width={54}
+          height={54}
+          x={-27}
+          y={-27}
+          fill="#FFF"
+          stroke="#56616C"
+          strokeOpacity={0.32}
+          strokeWidth={2}
+          filter="url(#identity-orchestration_svg__e)"
+          rx={18}
+        />
+        <path
+          fill="none"
+          stroke="#050B1D"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={1.8}
+          d="M4.5-3.5A3.5 3.5 0 1 0 .6 0L-3 3.6l-2-.7-1.6 1.6 1.9 1.9 6-6"
+        />
+        <circle cx={19} cy={-19} r={8.5} fill="#050B1D" />
+        <text
+          x={19}
+          y={-15.8}
+          fill="#FFF"
+          fontSize={9}
+          fontWeight={700}
+          textAnchor="middle"
+        >
+          {"3"}
+        </text>
+      </g>
+    </g>
+    <text
+      x={52}
+      y={4}
+      fill="#56616C"
+      className="identity-orchestration_svg__nsec-pop"
+      fontSize={12.5}
+      fontWeight={600}
+      style={{
+        "--d": "1.06s",
+      }}
+      transform="translate(516 320)"
+    >
+      {"Solicitac\u0327a\u0303o"}
+    </text>
+    <g
+      className="identity-orchestration_svg__nsec-pop"
+      style={{
+        "--d": "1.04s",
+      }}
+    >
+      <g
+        className="identity-orchestration_svg__nsec-float-a"
+        transform="translate(458.593 458.593)"
+      >
+        <rect
+          width={54}
+          height={54}
+          x={-27}
+          y={-27}
+          fill="#FFF"
+          stroke="#FF9F2F"
+          strokeWidth={2}
+          filter="url(#identity-orchestration_svg__e)"
+          rx={18}
+        />
+        <path
+          fill="none"
+          stroke="#FF9F2F"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={1.8}
+          d="m-8 .5 5 5 11-11"
+        />
+        <circle cx={19} cy={-19} r={8.5} fill="#FF9F2F" />
+        <text
+          x={19}
+          y={-15.8}
+          fill="#FFF"
+          fontSize={9}
+          fontWeight={700}
+          textAnchor="middle"
+        >
+          {"4"}
+        </text>
+      </g>
+    </g>
+    <text
+      x={36.77}
+      y={40.77}
+      fill="#56616C"
+      className="identity-orchestration_svg__nsec-pop"
+      fontSize={12.5}
+      fontWeight={600}
+      style={{
+        "--d": "1.24s",
+      }}
+      transform="translate(458.593 458.593)"
+    >
+      {"Aprovac\u0327a\u0303o"}
+    </text>
+    <g
+      className="identity-orchestration_svg__nsec-pop"
+      style={{
+        "--d": "1.22s",
+      }}
+    >
+      <g
+        className="identity-orchestration_svg__nsec-float-b"
+        transform="translate(320 516)"
+      >
+        <rect
+          width={54}
+          height={54}
+          x={-27}
+          y={-27}
+          fill="#FFF"
+          stroke="#56616C"
+          strokeOpacity={0.32}
+          strokeWidth={2}
+          filter="url(#identity-orchestration_svg__e)"
+          rx={18}
+        />
+        <path
+          fill="none"
+          stroke="#050B1D"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={1.8}
+          d="M-8.5-6.5h17v11h-17zm6 15h5M0 4.5v4"
+        />
+        <circle cx={19} cy={-19} r={8.5} fill="#050B1D" />
+        <text
+          x={19}
+          y={-15.8}
+          fill="#FFF"
+          fontSize={9}
+          fontWeight={700}
+          textAnchor="middle"
+        >
+          {"5"}
+        </text>
+      </g>
+    </g>
+    <text
+      y={56}
+      fill="#56616C"
+      className="identity-orchestration_svg__nsec-pop"
+      fontSize={12.5}
+      fontWeight={600}
+      style={{
+        "--d": "1.42s",
+      }}
+      textAnchor="middle"
+      transform="translate(320 516)"
+    >
+      {"Provisionamento"}
+    </text>
+    <g
+      className="identity-orchestration_svg__nsec-pop"
+      style={{
+        "--d": "1.4s",
+      }}
+    >
+      <g
+        className="identity-orchestration_svg__nsec-float-a"
+        transform="translate(181.407 458.593)"
+      >
+        <rect
+          width={54}
+          height={54}
+          x={-27}
+          y={-27}
+          fill="#FFF"
+          stroke="#56616C"
+          strokeOpacity={0.32}
+          strokeWidth={2}
+          filter="url(#identity-orchestration_svg__e)"
+          rx={18}
+        />
+        <path
+          fill="none"
+          stroke="#050B1D"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={1.8}
+          d="M-8.5 1h4L-2-5 1 7l2.5-6h5"
+        />
+        <circle cx={19} cy={-19} r={8.5} fill="#050B1D" />
+        <text
+          x={19}
+          y={-15.8}
+          fill="#FFF"
+          fontSize={9}
+          fontWeight={700}
+          textAnchor="middle"
+        >
+          {"6"}
+        </text>
+      </g>
+    </g>
+    <text
+      x={-36.77}
+      y={40.77}
+      fill="#56616C"
+      className="identity-orchestration_svg__nsec-pop"
+      fontSize={12.5}
+      fontWeight={600}
+      style={{
+        "--d": "1.5999999999999999s",
+      }}
+      textAnchor="end"
+      transform="translate(181.407 458.593)"
+    >
+      {"Monitoramento"}
+    </text>
+    <g
+      className="identity-orchestration_svg__nsec-pop"
+      style={{
+        "--d": "1.58s",
+      }}
+    >
+      <g
+        className="identity-orchestration_svg__nsec-float-b"
+        transform="translate(124 320)"
+      >
+        <rect
+          width={54}
+          height={54}
+          x={-27}
+          y={-27}
+          fill="#FFF"
+          stroke="#FF9F2F"
+          strokeWidth={2}
+          filter="url(#identity-orchestration_svg__e)"
+          rx={18}
+        />
+        <path
+          fill="none"
+          stroke="#FF9F2F"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={1.8}
+          d="m0-9 7.5 3.5v5.2C7.5 4.3 4.4 7.6 0 9-4.4 7.6-7.5 4.3-7.5-.3v-5.2zm-3 9 2.2 2.2L3.4-2"
+        />
+        <circle cx={19} cy={-19} r={8.5} fill="#FF9F2F" />
+        <text
+          x={19}
+          y={-15.8}
+          fill="#FFF"
+          fontSize={9}
+          fontWeight={700}
+          textAnchor="middle"
+        >
+          {"7"}
+        </text>
+      </g>
+    </g>
+    <text
+      x={-52}
+      y={4}
+      fill="#56616C"
+      className="identity-orchestration_svg__nsec-pop"
+      fontSize={12.5}
+      fontWeight={600}
+      style={{
+        "--d": "1.78s",
+      }}
+      textAnchor="end"
+      transform="translate(124 320)"
+    >
+      {"Revisa\u0303o"}
+    </text>
+    <g
+      className="identity-orchestration_svg__nsec-pop"
+      style={{
+        "--d": "1.76s",
+      }}
+    >
+      <g
+        className="identity-orchestration_svg__nsec-float-a"
+        transform="translate(181.407 181.407)"
+      >
+        <rect
+          width={54}
+          height={54}
+          x={-27}
+          y={-27}
+          fill="#FFF"
+          stroke="#56616C"
+          strokeOpacity={0.32}
+          strokeWidth={2}
+          filter="url(#identity-orchestration_svg__e)"
+          rx={18}
+        />
+        <path
+          fill="none"
+          stroke="#050B1D"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={1.8}
+          d="M-6.5-1h13v9.5h-13zm3.1 0v-3.6a3.4 3.4 0 0 1 6.8 0V-1m-5.6 4.8h4.4"
+        />
+        <circle cx={19} cy={-19} r={8.5} fill="#050B1D" />
+        <text
+          x={19}
+          y={-15.8}
+          fill="#FFF"
+          fontSize={9}
+          fontWeight={700}
+          textAnchor="middle"
+        >
+          {"8"}
+        </text>
+      </g>
+    </g>
+    <text
+      x={-36.77}
+      y={-32.77}
+      fill="#56616C"
+      className="identity-orchestration_svg__nsec-pop"
+      fontSize={12.5}
+      fontWeight={600}
+      style={{
+        "--d": "1.96s",
+      }}
+      textAnchor="end"
+      transform="translate(181.407 181.407)"
+    >
+      {"Revogac\u0327a\u0303o"}
+    </text>
+    <g className="identity-orchestration_svg__nsec-baton">
+      <rect
+        width={74}
+        height={40}
+        x={34}
+        y={44}
+        fill="#FFF"
+        stroke="#56616C"
+        strokeOpacity={0.3}
+        strokeWidth={2}
+        filter="url(#identity-orchestration_svg__e)"
+        rx={14}
+      />
+      <path
+        stroke="#050B1D"
+        strokeLinecap="round"
+        strokeWidth={2.6}
+        d="M54 64h6m8-7v14m12-10v6m12-13v20"
+      />
+      <path
+        stroke="#050B1D"
+        strokeLinecap="round"
+        strokeWidth={5}
+        d="m108 70 60 52"
+      />
+      <circle
+        cx={170}
+        cy={124}
+        r={9}
+        fill="url(#identity-orchestration_svg__b)"
+        filter="url(#identity-orchestration_svg__c)"
+      />
+    </g>
+    <g
+      className="identity-orchestration_svg__nsec-hand"
+      transform="translate(58 536)"
+    >
+      <rect
+        width={118}
+        height={46}
+        fill="#050B1D"
+        filter="url(#identity-orchestration_svg__e)"
+        rx={16}
+      />
+      <circle
+        cx={26}
+        cy={23}
+        r={11}
+        fill="url(#identity-orchestration_svg__b)"
+      />
+      <path
+        fill="none"
+        stroke="#050B1D"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2.4}
+        d="m21 24 4 4 7-8"
+      />
+      <rect
+        width={54}
+        height={6}
+        x={46}
+        y={14}
+        fill="#FFF"
+        opacity={0.9}
+        rx={3}
+      />
+      <rect
+        width={34}
+        height={6}
+        x={46}
+        y={26}
+        fill="#FFF"
+        opacity={0.4}
+        rx={3}
+      />
+      <path
+        fill="#FFF"
+        stroke="#050B1D"
+        strokeLinejoin="round"
+        strokeWidth={2.4}
+        d="m96 44 6 26 7-10 11 2z"
+      />
+    </g>
+    <g fill="#FF9F2F">
+      <circle
+        cx={72}
+        cy={300}
+        r={4.5}
+        className="identity-orchestration_svg__nsec-twinkle"
+      />
+      <circle
+        cx={556}
+        cy={150}
+        r={3.5}
+        className="identity-orchestration_svg__nsec-twinkle"
+        style={{
+          animationDelay: "1.3s",
+        }}
+      />
+      <circle
+        cx={540}
+        cy={560}
+        r={4}
+        className="identity-orchestration_svg__nsec-twinkle"
+        style={{
+          animationDelay: "2.2s",
+        }}
+      />
+    </g>
+  </svg>
+);
+export default SvgIdentityOrchestration;
