@@ -57,40 +57,49 @@ function About() {
   return (
     <section
       id="sobre"
-      className="relative overflow-hidden bg-nicola-surface py-24 sm:py-28"
+      className="relative overflow-hidden bg-nicola-surface py-16 sm:py-20 lg:py-28"
     >
-      <div className="absolute -left-40 bottom-0 h-96 w-96 rounded-full bg-nicola-orange/10 blur-3xl" />
+      {/* Elemento decorativo */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute -left-40 bottom-0 h-80 w-80 rounded-full bg-nicola-orange/10 blur-3xl sm:h-96 sm:w-96"
+      />
 
       <div className="container-nicola relative">
-        <div className="grid items-center gap-16 lg:grid-cols-[0.95fr_1.05fr]">
-          <div>
+        <div className="grid items-center gap-12 lg:grid-cols-[0.95fr_1.05fr] lg:gap-16">
+          {/* Conteúdo textual */}
+          <div className="text-center lg:text-left">
             <span className="text-xs font-bold uppercase tracking-[0.22em] text-nicola-orange-dark">
               Experts em identidades
             </span>
 
-            <h2 className="mt-4 text-balance text-4xl font-bold leading-tight tracking-[-0.035em] text-nicola-navy sm:text-5xl">
+            <h2 className="mx-auto mt-4 max-w-3xl text-balance text-3xl font-bold leading-tight tracking-[-0.035em] text-nicola-navy sm:text-4xl lg:mx-0 lg:text-5xl">
               Segurança construída por quem entende de pessoas, acessos e
               negócios
             </h2>
 
-            <p className="mt-6 text-lg leading-8 text-slate-600">
+            <p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-slate-600 sm:mt-6 sm:text-lg sm:leading-8 lg:mx-0">
               A NicolaSec é uma consultoria especializada em Segurança da
               Informação que ajuda organizações a combinar conformidade,
               agilidade e inovação.
             </p>
 
-            <p className="mt-4 leading-7 text-slate-600">
+            <p className="mx-auto mt-4 max-w-2xl text-sm leading-7 text-slate-600 sm:text-base lg:mx-0">
               Trabalhamos lado a lado com nossos clientes para transformar
               desafios complexos de identidade em operações mais seguras,
               automatizadas e confiáveis.
             </p>
 
-            <div className="mt-9 space-y-5">
+            {/* Valores */}
+            <div className="mx-auto mt-8 max-w-xl space-y-5 text-left sm:mt-9 lg:mx-0">
               {values.map((value) => {
                 const Icon = value.icon
 
                 return (
-                  <div key={value.title} className="flex items-start gap-4">
+                  <div
+                    key={value.title}
+                    className="flex items-start gap-4 rounded-2xl border border-transparent p-2 transition duration-300 hover:border-nicola-orange/20 hover:bg-white"
+                  >
                     <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-nicola-orange/15 text-nicola-orange-dark">
                       <Icon size={21} />
                     </div>
@@ -111,44 +120,58 @@ function About() {
 
             <a
               href="#contato"
-              className="mt-9 inline-flex items-center gap-2 rounded-full bg-nicola-navy px-7 py-4 font-semibold text-white transition hover:-translate-y-0.5 hover:bg-nicola-orange hover:text-nicola-navy"
+              className="mt-8 inline-flex w-full items-center justify-center gap-2 rounded-full bg-nicola-navy px-7 py-4 font-semibold text-white transition duration-300 hover:-translate-y-0.5 hover:bg-nicola-orange hover:text-nicola-navy sm:mt-9 sm:w-auto"
             >
               Conheça a NicolaSec
               <ArrowRight size={18} />
             </a>
           </div>
 
-          <div className="relative">
-            <div className="absolute -inset-6 rounded-[3rem] bg-gradient-to-br from-nicola-orange/20 to-slate-300/30 blur-2xl" />
+          {/* Painel de indicadores */}
+          <div className="relative mx-auto w-full max-w-2xl lg:max-w-none">
+            <div
+              aria-hidden="true"
+              className="pointer-events-none absolute -inset-3 rounded-[2.5rem] bg-gradient-to-br from-nicola-orange/20 to-slate-300/30 blur-2xl sm:-inset-6 sm:rounded-[3rem]"
+            />
 
-            <div className="relative overflow-hidden rounded-[2.25rem] bg-nicola-navy p-6 shadow-nicola sm:p-8">
-              <div className="absolute -right-20 -top-20 h-72 w-72 rounded-full border-[45px] border-nicola-orange/10" />
-              <div className="absolute -bottom-24 -left-24 h-72 w-72 rounded-full border-[45px] border-white/[0.03]" />
+            <div className="relative overflow-hidden rounded-3xl bg-nicola-navy p-5 shadow-nicola sm:rounded-[2.25rem] sm:p-8">
+              {/* Círculos decorativos */}
+              <div
+                aria-hidden="true"
+                className="pointer-events-none absolute -right-20 -top-20 h-64 w-64 rounded-full border-[40px] border-nicola-orange/10 sm:h-72 sm:w-72 sm:border-[45px]"
+              />
 
-              <div className="relative border-b border-white/10 pb-7">
-                <p className="text-xs font-bold uppercase tracking-[0.2em] text-nicola-orange">
+              <div
+                aria-hidden="true"
+                className="pointer-events-none absolute -bottom-24 -left-24 h-64 w-64 rounded-full border-[40px] border-white/[0.03] sm:h-72 sm:w-72 sm:border-[45px]"
+              />
+
+              {/* Cabeçalho do painel */}
+              <div className="relative border-b border-white/10 pb-6 text-center sm:pb-7 sm:text-left">
+                <p className="text-xs font-bold uppercase tracking-[0.18em] text-nicola-orange sm:tracking-[0.2em]">
                   NicolaSec Experts
                 </p>
 
-                <h3 className="mt-3 max-w-md text-2xl font-bold leading-tight text-white sm:text-3xl">
+                <h3 className="mx-auto mt-3 max-w-md text-xl font-bold leading-tight text-white sm:mx-0 sm:text-3xl">
                   Especialização que conecta estratégia e execução
                 </h3>
               </div>
 
-              <div className="relative mt-7 grid gap-4 sm:grid-cols-2">
+              {/* Indicadores */}
+              <div className="relative mt-6 grid gap-3 sm:mt-7 sm:grid-cols-2 sm:gap-4">
                 {indicators.map((indicator) => {
                   const Icon = indicator.icon
 
                   return (
                     <div
                       key={indicator.value}
-                      className="min-h-48 rounded-2xl border border-white/10 bg-white/[0.05] p-5 transition duration-300 hover:-translate-y-1 hover:border-nicola-orange/30 hover:bg-white/[0.08]"
+                      className="rounded-2xl border border-white/10 bg-white/[0.05] p-5 transition duration-300 hover:-translate-y-1 hover:border-nicola-orange/30 hover:bg-white/[0.08] sm:min-h-48"
                     >
                       <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-nicola-orange/15 text-nicola-orange">
                         <Icon size={21} />
                       </div>
 
-                      <strong className="mt-7 block text-xl text-white">
+                      <strong className="mt-6 block text-lg text-white sm:mt-7 sm:text-xl">
                         {indicator.value}
                       </strong>
 

@@ -87,22 +87,26 @@ const relationships = [
   },
 ]
 
-function LogoGroup({ hidden = false }) {
+function LogoGroup({ duplicate = false }) {
   return (
     <div
-      aria-hidden={hidden}
-      className="flex shrink-0 items-center gap-4 pr-4"
+      aria-hidden={duplicate ? 'true' : undefined}
+      className={[
+        'flex shrink-0 items-center gap-3 pr-3 sm:gap-4 sm:pr-4',
+        duplicate ? 'logo-marquee-duplicate' : '',
+      ].join(' ')}
     >
       {relationships.map((company) => (
         <div
-          key={`${hidden ? 'duplicate-' : ''}${company.name}`}
-          className="group/logo flex h-24 w-48 shrink-0 items-center justify-center rounded-2xl border border-slate-200 bg-white px-7 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-nicola-orange/40 hover:shadow-lg"
+          key={`${duplicate ? 'duplicate-' : ''}${company.name}`}
+          className="group/logo flex h-20 w-36 shrink-0 items-center justify-center rounded-xl border border-slate-200 bg-white px-5 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-nicola-orange/40 hover:shadow-lg sm:h-24 sm:w-48 sm:rounded-2xl sm:px-7"
         >
           <img
             src={company.logo}
-            alt={hidden ? '' : `Logo da ${company.name}`}
-            className="max-h-14 max-w-full object-contain opacity-60 grayscale transition duration-300 group-hover/logo:opacity-100 group-hover/logo:grayscale-0"
+            alt={duplicate ? '' : `Logo da ${company.name}`}
+            className="max-h-11 max-w-full object-contain opacity-90 transition duration-300 sm:max-h-14 sm:opacity-60 sm:grayscale sm:group-hover/logo:opacity-100 sm:group-hover/logo:grayscale-0"
             loading="lazy"
+            draggable="false"
           />
         </div>
       ))}
@@ -114,7 +118,7 @@ function Relationships() {
   return (
     <section
       id="relacionamentos"
-      className="overflow-hidden border-y border-slate-200 bg-white py-16"
+      className="overflow-hidden border-y border-slate-200 bg-white py-12 sm:py-16 lg:py-20"
     >
       <div className="container-nicola">
         <div className="mx-auto max-w-2xl text-center">
@@ -122,21 +126,24 @@ function Relationships() {
             Relacionamentos
           </span>
 
-          <h2 className="mt-3 text-2xl font-bold tracking-tight text-nicola-navy sm:text-3xl">
+          <h2 className="mt-3 text-balance text-2xl font-bold leading-tight tracking-tight text-nicola-navy sm:text-3xl lg:text-4xl">
             Experiência ao lado de grandes organizações
           </h2>
 
-          <p className="mt-3 text-sm leading-6 text-slate-500 sm:text-base">
-            Projetos que fortalecem operações críticas, governança de acessos
-            e transformação digital segura.
+          <p className="mx-auto mt-3 max-w-xl text-sm leading-6 text-slate-500 sm:mt-4 sm:text-base sm:leading-7">
+            Projetos que fortalecem operações críticas, governança de acessos e
+            transformação digital segura.
           </p>
         </div>
       </div>
 
-      <div className="logo-marquee mt-11">
+      <div
+        className="logo-marquee mt-8 sm:mt-10 lg:mt-12"
+        aria-label="Organizações com as quais temos experiência"
+      >
         <div className="logo-marquee-track">
           <LogoGroup />
-          <LogoGroup hidden />
+          <LogoGroup duplicate />
         </div>
       </div>
     </section>
